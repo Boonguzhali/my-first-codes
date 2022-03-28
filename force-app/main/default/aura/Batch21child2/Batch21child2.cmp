@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:attribute value="accEmailChild" type="String"></aura:attribute>
+
+    <div> Acc Email : "{!v.accEmailChild}"</div>
+</aura:component>	

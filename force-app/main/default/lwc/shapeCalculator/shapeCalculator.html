@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Shape calculator">
+        <lightning-input type="Number" label="Enter side of the squares" onchange={sideChanger}></lightning-input>
+        <lightning-input type="Number" label="Enter length of rectangle" onchange={lengthChanger}></lightning-input>
+        <lightning-input type="Number" label="Enter width of rectangle" onchange={widthChanger}></lightning-input>
+        <lightning-input type="Number" label="Enter diagonal1 of rombus " onchange={d1Changer}></lightning-input>
+        <lightning-input type="Number" label="Enter diagonal 2 of rombus" onchange={d2Changer}></lightning-input>
+        <lightning-button-group>
+            <lightning-button label="Square" icon-position="right" onclick={squareHandler}></lightning-button>
+            <lightning-button label="Rectangle" icon-position="center" onclick={rectangleHander}></lightning-button>
+            <lightning-button label="Rhombus" icon-position="left" onclick={rhombusHandler}></lightning-button>
+        </lightning-button-group>
+
+        
+
+    </lightning-card>
+
+    <lightning-formatted-text value={outputCalculated}></lightning-formatted-text>
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Conditional Example">
+        <div class = "slds-var-m-around_medium">
+            <lightning-button variant="brand" 
+            label="Show data" 
+            title="Show data" 
+            onclick={handleClick} 
+            class="slds-m-left_x-small">
+            </lightning-button>
+
+            <template if:true={isVisible}>
+                <div>Welcome to my page</div>
+            </template>
+            
+            <lightning-input type="text" 
+            label="Type hello to see the data" 
+            onkeyup={trackHandler}>
+            </lightning-input>
+            
+            <template if:true={helloMethod}>
+                <div>Type correctly the hello word!!</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,40 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<template>
+    <table>
+        <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>phone</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+                <template for:each={accDataFromWire.data} for:item="acc">
+                    <tr key={acc.Id}>
+                        <td>{acc.Name}</td>
+                        <td>{acc.Phone}</td>
+                        <td>{acc.Email__c}</td>
+                    </tr>
+                </template>
+        </tbody>
+    </table>
+    <h1>LWC data table</h1>
+    <lightning-datatable key-field="Id"
+                         data={accDataFromWire.data}
+                         columns={columns}
+                         onrowaction={handleRowAction}>
+    </lightning-datatable>
+<br/>
+<h1><!-- sldsValidatorIgnoreNextLine -->
+    Contact Data</h1>
+<template if:true={contactdata}>
+    <lightning-datatable
+            key-field="Id"
+            data={contactdata}
+            columns={contactcolumns}>
+        </lightning-datatable>
+</template>
+
+
+</template>

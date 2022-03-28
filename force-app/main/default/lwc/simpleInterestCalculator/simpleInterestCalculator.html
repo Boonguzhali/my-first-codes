@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Simple calculator">
+        <lightning-input type="Number" label="Enter principal" onchange={principalChange}></lightning-input>
+        <lightning-input type="Number" label="Enter years" onchange={yearsChange}></lightning-input>
+        <lightning-input type="Number" label="Enter interest" onchange={interestChange}></lightning-input>
+        <lightning-button label="Calculate SimpleInterest" onclick={calculateHandler}></lightning-button>
+        <lightning-formatted-text value={calculatedOutput}></lightning-formatted-text>
+    </lightning-card>
+</template>

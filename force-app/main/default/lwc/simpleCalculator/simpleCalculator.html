@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Simple Calculator">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item>
+                <lightning-input type="number" name="firstNumber" value={firstNumber} onchange={firstNumberChange}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-input type="number" name="secondNumber" value={secondNumber} onchange={secondNumberChange}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-button-group>
+                    <lightning-button label="Addition" onclick={addHandler}></lightning-button>
+                    <lightning-button label="Sub" onclick={subHandler}></lightning-button>
+                    <lightning-button label="Mul" onclick={mulHandler}></lightning-button>
+                    <lightning-button label="Div" onclick={divHandler}></lightning-button>
+                </lightning-button-group>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-formatted-text value={result}></lightning-formatted-text>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-input type="checkbox" onchange={showpreviousResult}></lightning-input>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </lightning-card>
+</template>

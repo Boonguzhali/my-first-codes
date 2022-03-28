@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute value="accNameChild" type="String"></aura:attribute>
+<aura:attribute value="accPhoneChild" type="Integer"></aura:attribute>
+<aura:attribute value="accRatingChild" type="String"></aura:attribute>
+<div>
+    Acc Name:{!v.accNameChild} <br/>
+    Acc Phone : {!v.accPhoneChild}
+    Acc rating: {!v.accRatingChild}
+</div>
+
+</aura:component>	
+

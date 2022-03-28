@@ -1,0 +1,5 @@
+<aura:event type="COMPONENT" description="Event template">
+<aura:attribute value="Account Name" type="String"></aura:attribute>
+<aura:attribute value="Account Phone" type="Integer"></aura:attribute>
+<aura:attribute value="Account Rating" type="String"></aura:attribute>
+</aura:event>

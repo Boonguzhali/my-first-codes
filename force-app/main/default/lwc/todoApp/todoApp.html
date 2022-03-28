@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <c-todo-item item-name="Milk"></c-todo-item>
+        <c-todo-item item-name="Butter"></c-todo-item>
+        <c-todo-item item-name="Bread"></c-todo-item>
+        <c-todo-item item-name="Honey"></c-todo-item>
+    </lightning-card>
+    <lightning-card>
+        <lightning-input label="r1" onchange={reactiveHandler}>{reactive}</lightning-input>
+        <lightning-input label="r2" onchange={nonreactiveHandler}>{nonreactive}</lightning-input>
+
+    </lightning-card>
+    <lightning-formatted-text value={reactive}></lightning-formatted-text>
+    <lightning-formatted-text value={nonreactive}></lightning-formatted-text>
+</template>

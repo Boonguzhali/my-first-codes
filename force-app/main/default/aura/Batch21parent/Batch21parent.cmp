@@ -1,0 +1,9 @@
+<aura:component >
+<aura:attribute value="Account Name" type="String"></aura:attribute>
+<aura:attribute value="Account Phone" type="Integer"></aura:attribute>
+<aura:attribute value="Account Rating" type="String"></aura:attribute>
+<aura:attribute value="Account Email" type="String"></aura:attribute>
+
+<div c:Batch21child accNameChild="{!v.Account Name}" accPhoneChild="{!v.Account Phone}" accRatingChild="{!v.Account Rating}"  ></div>
+<div c:Batch21child2 accEmailChild="{!v.Account Email}"></div>
+</aura:component>	

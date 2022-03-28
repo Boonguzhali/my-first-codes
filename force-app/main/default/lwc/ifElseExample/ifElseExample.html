@@ -1,0 +1,26 @@
+<template>
+    <div if:true={something}> I am true </div>
+     <div if:false={something}> I am false </div>
+
+     <template if:true={show}>
+         <lightning-card title="Employee details">
+             <div class="slds-m-around_medium">
+                 <lightning-input label="Name" value={name} onchange={changeName}></lightning-input>
+                 <lightning-input label="Age" value={age} onchange={changeAge}></lightning-input>
+                 <lightning-input label="Salary" value={salary} onchange={changeSalary}></lightning-input>
+                 <lightning-button label="Save" onclick={saveChanger}></lightning-button>
+             </div>
+         </lightning-card>
+      </template>
+      
+      <template if:false={show}>
+          <lightning-card title="Employer details for false">
+              <div class="slds-m-around_high">
+                  <p>Emp name:{name}</p>
+                  <p>Emp age:{age}</p>
+                  <p>Emp salary:{salary}</p>
+              </div>
+          </lightning-card>
+      </template>
+
+</template>
